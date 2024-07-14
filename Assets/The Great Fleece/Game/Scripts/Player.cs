@@ -24,11 +24,10 @@ public class Player : MonoBehaviour
             RaycastHit hitInfo;
             if(Physics.Raycast(rayOrigin, out hitInfo))
             {
-                Debug.Log("Hit : " + hitInfo.point);
-                _navMeshAgent.transform.position = hitInfo.point;
-
-               // GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-               // cube.transform.position = hitInfo.point;
+               // Debug.Log("Hit : " + hitInfo.point);
+                //_navMeshAgent.transform.position = hitInfo.point;
+                _navMeshAgent.SetDestination(hitInfo.point);
+            
             }
 
         }
