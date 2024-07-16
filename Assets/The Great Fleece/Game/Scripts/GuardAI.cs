@@ -7,7 +7,9 @@ public class GuardAI : MonoBehaviour
 {
     // Variables
     public List<Transform> wayPoints;
-    public Transform CurrentTarget;
+    [SerializeField]
+    private int  _CurrentTarget;
+
 
     // Prefabs
     NavMeshAgent _navMeshAgent;
@@ -16,18 +18,21 @@ public class GuardAI : MonoBehaviour
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         
-        if(wayPoints.Count > 0)
-        {
-            if(wayPoints[0] != null)
-            {
-                CurrentTarget = wayPoints[0];
-            }
-        }
+        
     }
 
     void Update()
     {
-        _navMeshAgent.destination = CurrentTarget.position;
+        if (wayPoints.Count > 0 && wayPoints[_CurrentTarget] != null)
+        {
+            _navMeshAgent.SetDestination(wayPoints[_CurrentTarget].position);
+        }
+        float distance = Vector3.Distance(transform.position, wayPoints[_CurrentTarget].position);
+        if(distance < 1.0f)
+        {
+            _CurrentTarget++;
+        }
+
         
     }
 }
