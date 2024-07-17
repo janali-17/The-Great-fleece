@@ -28980,6 +28980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SecurityGuard
       objectReference: {fileID: 0}
+    - target: {fileID: 1111442448927152, guid: 6b8e3a1939662ee44908a15fc4dafb93, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4423841752579072, guid: 6b8e3a1939662ee44908a15fc4dafb93, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -49543,13 +49547,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.028497022, y: -0.9913099, z: 0.081092164, w: 0.09958245}
-  m_LocalPosition: {x: -10.671498, y: 0.65519905, z: 38.019142}
+  m_LocalRotation: {x: 0.0011460388, y: 0.996409, z: -0.014527992, w: 0.08340721}
+  m_LocalPosition: {x: -5.9903116, y: 9.389999, z: -111.60192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 44, y: -28.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.923, y: -184.83, z: 1.4}
 --- !u!114 &2043896035
 MonoBehaviour:
   m_ObjectHideFlags: 0
