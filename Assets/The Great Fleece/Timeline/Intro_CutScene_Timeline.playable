@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: af2c9caaadfc26c4bb2d385f291f1cb1
     defaultValue: {fileID: 0}
@@ -27,6 +28,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 1c44c18c2ad604a4895a9b805b7fb627
     defaultValue: {fileID: 0}
@@ -42,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 5b0bb608245093a40b839b75fc77bae9
     defaultValue: {fileID: 0}
@@ -57,6 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 06c75a0d35d2aee409d958174db9474d
     defaultValue: {fileID: 0}
@@ -1074,6 +1078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 6967aaa298bcb1f4bb576dd00bf2ad6f
     defaultValue: {fileID: 0}
@@ -1216,6 +1221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: f4357093971fbc74783ed624d3c1de4b
     defaultValue: {fileID: 0}
@@ -1694,7 +1700,25 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1721,7 +1745,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -1958,13 +2000,49 @@ MonoBehaviour:
     m_BlendOutDuration: 0.8666666666666671
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -2208,6 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: ba19cdbcf6b0d424297255ea23e2fe34
     defaultValue: {fileID: 0}
@@ -2223,6 +2302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 6325e9949893b8c498ee4ab2f1f38df0
     defaultValue: {fileID: 0}
@@ -3323,6 +3403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 3b72067a21808754a998fbdd91050744
     defaultValue: {fileID: 0}
@@ -3615,6 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 02bd942a380283c499e42fba2320d909
     defaultValue: {fileID: 0}
@@ -3630,6 +3712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: d45235a52d17bf0458ab7d72e66e0a73
     defaultValue: {fileID: 0}
@@ -3674,6 +3757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 55b3d8ccfea404044887101cd0ac309e
     defaultValue: {fileID: 0}
@@ -3689,6 +3773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 99c2178a5f77316449c6dabe2e7ac06a
     defaultValue: {fileID: 0}
@@ -3745,6 +3830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90fb794a295e73545af71bcdb7375791, type: 3}
   m_Name: CinemachineShot
   m_EditorClassIdentifier: 
+  DisplayName: 
   VirtualCamera:
     exposedName: 578e303e68d27014f93fa05f84d2717b
     defaultValue: {fileID: 0}
