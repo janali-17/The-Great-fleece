@@ -14,12 +14,15 @@ public class GuardAI : MonoBehaviour
     private bool _targetReached = false;
 
 
-    // Prefabs
+    // Components handles
     NavMeshAgent _navMeshAgent;
 
+    // Animator
+    Animator _animator;
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
+        _animator = GetComponent<Animator>();
 
 
     }
@@ -31,6 +34,14 @@ public class GuardAI : MonoBehaviour
             _navMeshAgent.SetDestination(wayPoints[_CurrentTarget].position);
         }
         float distance = Vector3.Distance(transform.position, wayPoints[_CurrentTarget].position);
+        if(distance < 1 && (_CurrentTarget == 0 || _CurrentTarget == wayPoints.Count -1))
+        {
+            _animator.SetBool("Walk", false);
+        }
+        else
+        {
+            _animator.SetBool("Walk", true);
+        }
         if (distance < 1.0f && _targetReached == false)
         {
             _targetReached = true;
@@ -53,7 +64,7 @@ public class GuardAI : MonoBehaviour
             yield return new WaitForSeconds(randRang);
         }
 
-        
+
         if (_reverse == true)
         {
             _CurrentTarget--;
