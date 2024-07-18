@@ -44,8 +44,12 @@ public class GuardAI : MonoBehaviour
         }
         if (distance < 1.0f && _targetReached == false)
         {
+            if(wayPoints.Count < 2)
+            {
+                return;
+            }
             _targetReached = true;
-            Debug.Log("Target Has Been Reached " + _targetReached);
+          //  Debug.Log("Target Has Been Reached " + _targetReached);
 
             StartCoroutine(WaitForNextPoint());
         }
@@ -53,7 +57,7 @@ public class GuardAI : MonoBehaviour
 
     IEnumerator WaitForNextPoint()
     {
-        Debug.Log("wait for 5 seconds");
+        //Debug.Log("wait for 5 seconds");
         float randRang = UnityEngine.Random.Range(5.0f, 7.0f);
         if(_CurrentTarget == 0)
         {
