@@ -7,6 +7,7 @@ using UnityEngine.AI;
 public class Player : MonoBehaviour
 {
     //Variables
+    private bool _coinTossed = false;
 
     //Prefabs && Handles
     private NavMeshAgent _navMeshAgent;
@@ -22,7 +23,6 @@ public class Player : MonoBehaviour
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponentInChildren<Animator>();
-       // _coinAudio = GetComponent<AudioClip>();
     }
 
     void Update()
@@ -47,17 +47,36 @@ public class Player : MonoBehaviour
             _animator.SetBool("Walk", true);
         }
 
-       if(Input.GetMouseButtonDown(1)) 
+       if(Input.GetMouseButtonDown(1) && _coinTossed == false) 
         {
             Ray rayOrigin = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
             if(Physics.Raycast(rayOrigin,out hitInfo))
             {
-                  Instantiate(_CoinPrefab,hitInfo.point, Quaternion.identity);
+                _coinTossed = true;
+                Instantiate(_CoinPrefab,hitInfo.point, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(_coinAudio, transform.position);
+                SendAiToCoin(hitInfo.point);
             }
+
            
-            
+        }
+    }
+
+    void SendAiToCoin(Vector3 coinPos)
+    {
+        GameObject[] guards = GameObject.FindGameObjectsWithTag("Guard1"); 
+        
+        foreach(var guard in guards)
+        {
+            NavMeshAgent CurrentguardAgent = guard.GetComponent<NavMeshAgent>();
+            GuardAI CurrentGuard = guard.GetComponent<GuardAI>();
+            Animator animator = guard.GetComponent<Animator>();
+
+            CurrentGuard.coinTossed = true;
+            CurrentguardAgent.SetDestination(coinPos);
+            animator.SetBool("Walk", true);
+            CurrentGuard.coinPos = coinPos;
         }
     }
 }

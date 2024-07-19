@@ -19537,7 +19537,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -19560,6 +19560,8 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 336318859}
   _CurrentTarget: 0
+  coinTossed: 0
+  coinPos: {x: 0, y: 0, z: 0}
 --- !u!95 &732610492
 Animator:
   serializedVersion: 3
@@ -22393,7 +22395,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -22418,6 +22420,8 @@ MonoBehaviour:
   - {fileID: 718828001}
   - {fileID: 1094718280}
   _CurrentTarget: 0
+  coinTossed: 0
+  coinPos: {x: 0, y: 0, z: 0}
 --- !u!95 &849353794
 Animator:
   serializedVersion: 3
@@ -24353,7 +24357,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -24379,6 +24383,8 @@ MonoBehaviour:
   - {fileID: 1346360437}
   - {fileID: 1551362085}
   _CurrentTarget: 0
+  coinTossed: 0
+  coinPos: {x: 0, y: 0, z: 0}
 --- !u!95 &946824982
 Animator:
   serializedVersion: 3

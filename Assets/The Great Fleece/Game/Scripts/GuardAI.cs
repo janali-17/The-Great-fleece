@@ -12,10 +12,11 @@ public class GuardAI : MonoBehaviour
     private int _CurrentTarget;
     private bool _reverse = false;
     private bool _targetReached = false;
-
+    public bool coinTossed = false;
+    public Vector3 coinPos;
 
     // Components handles
-    NavMeshAgent _navMeshAgent;
+    private NavMeshAgent _navMeshAgent;
 
     // Animator
     Animator _animator;
@@ -29,7 +30,7 @@ public class GuardAI : MonoBehaviour
 
     void Update()
     {
-        if (wayPoints.Count > 0 && wayPoints[_CurrentTarget] != null)
+        if (wayPoints.Count > 0 && wayPoints[_CurrentTarget] != null && coinTossed == false)
         {
             _navMeshAgent.SetDestination(wayPoints[_CurrentTarget].position);
         }
@@ -52,6 +53,14 @@ public class GuardAI : MonoBehaviour
           //  Debug.Log("Target Has Been Reached " + _targetReached);
 
             StartCoroutine(WaitForNextPoint());
+        }
+        else
+        {
+            float Distance = Vector3.Distance(transform.position, coinPos);
+            if(Distance < 5.0f)
+            {
+                _animator.SetBool("Walk", false);
+            }
         }
     }
 
