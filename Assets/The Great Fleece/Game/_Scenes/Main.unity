@@ -50184,6 +50184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookAt: {fileID: 1394689675}
+  StartCamera: {fileID: 959008484}
 --- !u!1 &2045439348
 GameObject:
   m_ObjectHideFlags: 0
