@@ -23220,6 +23220,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 54
       objectReference: {fileID: 0}
+    - target: {fileID: 23355972756435174, guid: 5597e4cd8f614e74393cb7dcb77ffc4f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c4639611af66e1f488cc12e8464d1043, type: 2}
+    - target: {fileID: 23762052703765058, guid: 5597e4cd8f614e74393cb7dcb77ffc4f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c4639611af66e1f488cc12e8464d1043, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5597e4cd8f614e74393cb7dcb77ffc4f, type: 3}
 --- !u!1001 &893585251
@@ -30635,6 +30645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverCutScene: {fileID: 705106237}
+  RedMat: {fileID: 2100000, guid: 092de8c1418da4755ab99feb85e3c3e7, type: 2}
 --- !u!54 &1240998378
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40396,6 +40407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverCutScene: {fileID: 705106237}
+  RedMat: {fileID: 2100000, guid: 092de8c1418da4755ab99feb85e3c3e7, type: 2}
 --- !u!54 &1806382630
 Rigidbody:
   m_ObjectHideFlags: 0
