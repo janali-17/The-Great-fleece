@@ -33070,6 +33070,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c018603a2f18e5449139600d3efd544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _CoinPrefab: {fileID: 3908888105223117045, guid: 4aee20544b12e47219af132208bc5ccb,
+    type: 3}
+  _coinAudio: {fileID: 8300000, guid: 7a03079805ab64c8ea844d80fdc43366, type: 3}
 --- !u!1 &1400343118
 GameObject:
   m_ObjectHideFlags: 0
