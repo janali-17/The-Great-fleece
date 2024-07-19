@@ -53,6 +53,7 @@ public class Player : MonoBehaviour
             RaycastHit hitInfo;
             if(Physics.Raycast(rayOrigin,out hitInfo))
             {
+                _animator.SetTrigger("Throw");
                 _coinTossed = true;
                 Instantiate(_CoinPrefab,hitInfo.point, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(_coinAudio, transform.position);
