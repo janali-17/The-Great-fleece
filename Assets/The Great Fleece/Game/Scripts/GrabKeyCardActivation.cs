@@ -2,18 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Eyes : MonoBehaviour
+public class GrabKeyCardActivation : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _GameOverCut;
-
- 
-
+    private GameObject GrabCutScene;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if(other.tag == "Player")
         {
-            _GameOverCut.SetActive(true);
+            GrabCutScene.SetActive(true);
         }
     }
 }
