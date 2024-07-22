@@ -12,8 +12,7 @@ public class VoiceOver : MonoBehaviour
     {
             if (other.tag == "Player" && _hasPlayed == false)
             {
-                Debug.Log("Voice Trigger");
-                AudioSource.PlayClipAtPoint(Coin_voiceClip, Camera.main.transform.position);
+            AudioManager.Instance.VoiceOverAudio(Coin_voiceClip);
             _hasPlayed = true;
             }
     }
